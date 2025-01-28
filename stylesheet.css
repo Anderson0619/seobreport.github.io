@@ -58,6 +58,13 @@ body {
   align-items: center;
   padding: 70px 10% 0;
 }
+.home-container{
+  display: flex; /* Organiza los hijos en fila */
+  justify-content: space-between; /* Espacio entre los contenedores */
+  align-items: center; /* Alinea verticalmente los contenedores */
+  gap: 20px; /* Espaciado entre los contenedores */
+  width: 100%; /* Asegúrate de que el contenedor ocupe todo el ancho */
+}
 .home-content {
   max-width: 600px;
 }
@@ -113,6 +120,12 @@ body {
   color: #081b29;
   box-shadow: 0 0 20px #0ef;
 }
+.box-left, .box-right {
+  flex: 1; /* Los contenedores ocuparán el mismo espacio */
+  padding: 20px; /* Espaciado interno */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
 .btn-box {
   display: inline-block;
   padding: 12px 28px;
@@ -333,12 +346,16 @@ section {
   grid-template-columns: repeat(auto-fit, minmax(359px, auto));
   margin-top: 15px;
   margin-bottom: 20px;
+  height: 250px;
 }
 .row {
   position: relative;
   overflow: hidden;
   border-radius: 8px;
   cursor: pointer;
+}
+.hidden{
+  text-align: center;
 }
 .row img {
   width: 95%;
@@ -502,6 +519,12 @@ form textarea {
   box-shadow: 0 0 5px cyan, 0 0 25 cyan, 0 0 50px cyan, 0 0 100px cyan,
     0 0 200px cyan;
 }
+.email{
+  width: 90%;
+}
+.comentary{
+  align-items: center;
+}
 
 .last-text p{
   width: 100%;
@@ -523,7 +546,52 @@ form textarea {
   padding: 10px;
   border-radius: 0.5rem;
 }
+button {
+  display: block;
+  width: 40%;
+  padding: 10px;
+  background-color: #2976c8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px auto; /* Esto centra el botón */
+  justify-content: center;
+}
 
+.formulario-contenedor {
+  flex: 1; /* Ocupa el 50% del espacio disponible */
+  margin-left: 20px; /* Espacio entre la imagen y el formulario */
+}
+.centrar{
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.contenedor-formulario{
+  display: flex;
+  flex-direction: row;
+  align-items: center; /* Centrar verticalmente */
+  justify-content: space-around; /* Espaciado equitativo */
+}
+input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+
+button:hover {
+  background-color: #185ba1;
+}
+
+.checkbox{
+  margin-bottom: 8px;
+}
 
 @keyframes slideRight {
   0% {

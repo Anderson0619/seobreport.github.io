@@ -22,22 +22,36 @@
         </nav>
     </header>
     <section class="home" id="home">
-        <div class="home-content">
-            <h3><!-- RESEÑA --></h3>
-            <h1>SEOBREPORT CIA. LTDA.</h1>
-            <h3> Daniel Delgado empezó a brindar los servicios de forma personal con la colaboración de sus hijos. <span class="text"></span> </h3>
-            <p>En el año 1995 se inicia el proceso de modernización y privatización de los Puertos Ecuatorianos. 
-                <br> <!-- experience is to create and website design -->
-            </p>
-            <div class="home-sci">
-                <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
-                <a href="#" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
-                <a href="#" style="--i:9"><i class='bx bxl-instagram'></i></a>
-                <a href="#" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+        <div class="home-container">
+            <div class="box-left">
+                <div class="home-content">
+                    <h3><!-- RESEÑA --></h3>
+                    <h1>SEOBREPORT CIA. LTDA.</h1>
+                    <h3> Daniel Delgado empezó a brindar los servicios de forma personal con la colaboración de sus hijos. <span class="text"></span> </h3>
+                    <p>En el año 1995 se inicia el proceso de modernización y privatización de los Puertos Ecuatorianos. 
+                        <br> 
+                    </p>
+                    <div class="home-sci">
+                        <a href="#" style="--i:7"><i class='bx bxl-facebook'></i></a>
+                        <a href="#" style="--i:8"><i class='bx bxl-whatsapp'></i></a>
+                        <a href="#" style="--i:9"><i class='bx bxl-instagram'></i></a>
+                        <a href="#" style="--i:10"><i class='bx bxl-linkedin'></i></a>
+                    </div>
+                    <a href="#about" class="btn-box">Sobre Mí</a>
+                </div>
             </div>
-            <a href="#about" class="btn-box">Sobre Mí</a>
+    
+            <div class="box-right">
+                <div class="home-video">
+                    <video autoplay muted loop>
+                        <source src="/img/video1.mp4" type="video/mp4">
+                        Tu navegador no soporta videos.
+                    </video>
+                </div>
+            </div>
         </div>
     </section>
+    
 
     <section class="about" id="about">
         <div class="about-img">
@@ -184,7 +198,7 @@
 
                 <div class="portafolio-content">
                     <div class="row">
-                        <img src="./img/foto-puerto.jpg" alt="">
+                        <img src="./img/barco3.jpg" alt="">
                         <div class="layer">
                             <h5>OPERADOR PORTUARIO DE SERVICIOS</h5>
                             <p>
@@ -194,7 +208,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img src="./img/foto-puerto.jpg" alt="">
+                        <img src="./img/contenedor.jpg" alt="">
                         <div class="layer">
                             <h5>OPERADOR PORTUARIO DE SERVICIOS</h5>
                             <p>
@@ -217,7 +231,7 @@
 
                 <div class="portafolio-content">
                     <div class="row">
-                        <img src="./img/foto-puerto.jpg" alt="">
+                        <img src="./img/section2.jpg" alt="">
                         <div class="layer">
                             <h5>OPERADOR PORTUARIO DE SERVICIOS</h5>
                             <p>
@@ -227,7 +241,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img src="./img/foto-puerto.jpg" alt="">
+                        <img src="./img/barco2.jpg" alt="">
                         <div class="layer">
                             <h5>OPERADOR PORTUARIO DE SERVICIOS</h5>
                             <p>
@@ -237,7 +251,7 @@
                         </div>
                     </div>
                     <div class="row">
-                        <img src="./img/foto-puerto.jpg" alt="">
+                        <img src="./img/barco1.jpg" alt="">
                         <div class="layer">
                             <h5>OPERADOR PORTUARIO DE SERVICIOS</h5>
                             <p>
@@ -269,24 +283,37 @@
             </div>
         </div>
 
-        <div class="contact-form">
-            <form action="" id="contactForm">
-                <input type="text" id="name" placeholder="Ingrese su nombre" required>
-                <input type="email" id="email" placeholder="Ingrese su correo" required>
-
-                <!-- <input type="" placeholder="Ingrese su mensaje"> -->
-                <textarea name="" id="message" cols="40" rows="10" placeholder="Ingrese su mensaje"></textarea>
-                
-                <input type="submit" value="submit" class="send">
-
-            </form>
+        <div class="ventana" id="vent">
+            <div class="centrar">
+                <img class="img-contenedor" src="./img/comentary.jpg" alt="">
+            </div>
+            <div class="centrar">
+                MEDIO VIRTUAL PARA ENVIAR COMENTARIOS 
+            </div>
+    
+            <div class="contenedor-formulario">
+                <div class="formulario-contenedor">
+                    <!-- Aquí puedes agregar tu formulario -->
+                    <form id="contactForm" action="#" autocomplete="off">
+                        <input type="email" id="email" name="email" placeholder="Email" class="email" required>                   
+                        <textarea id="message" name="message" placeholder="Comentario" required></textarea>
+                        <button class="color-button" type="submit">Enviar</button>
+                    </form>
+                    <div id="successMessage" class="hidden">¡Gracias por su opinión!</div>
+                </div>
+            </div>
+    
+            <!-- <img class="img-contenedor" src="./img/sugerencias.png" alt=""> -->
         </div>
+    </div>
     </section>
     <div class="last-text">
         <p>Developed with love by Havindu Hemal ©️ <span id="currentYear"></span></p>
     </div>
     <a href="#" class="top"><i class="bx bx-up-arrow-alt"></i></a>
 
-    <script src="./main.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/comentario.js"></script>
+
 </body>
 </html>
