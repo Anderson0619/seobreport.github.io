@@ -410,7 +410,9 @@ section {
 .row:hover .layer {
   height: 100%;
 }
-
+.footer-text{
+  text-align: center;
+}
 .contact {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
