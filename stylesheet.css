@@ -14,7 +14,7 @@ body {
   left: 0;
   width: 100%;
   padding: 20px 10%;
-  background: rgb(30, 120, 126);
+  background: #104675;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -532,7 +532,7 @@ form textarea {
   width: 100%;
   text-align: center;
   padding: 25px 0;
-  background: rgb(7, 85, 91);
+  background: #104675;
   font-weight: 300;
   margin-top: 70px;
 }

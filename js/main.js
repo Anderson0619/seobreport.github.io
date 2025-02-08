@@ -22,4 +22,4 @@ document.getElementById('contactForm').addEventListener('submit', function(event
                      '&body=' + encodeURIComponent('Usuario: ' + name + '\n Correo Electrónico: ' + email + '\n Mensaje: ' + message );
 
     window.location.href = mailtoLink;
-});
+}); 
