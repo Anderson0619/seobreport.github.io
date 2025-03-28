@@ -7,16 +7,15 @@ document.addEventListener('DOMContentLoaded', function() {
     form.addEventListener('submit', function(event) {
         event.preventDefault();
 
-        const categorizacion = document.getElementById('categorizacion').value;
         const message = document.getElementById('message').value;
-        const correo = anonimoCheckbox.checked ? "Anónimo" : emailInput.value;
+        const email = document.getElementById('email').value;
 
         fetch('https://formspree.io/f/xvgzgajn', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({categorizacion, correo, message})
+            body: JSON.stringify({email, message})
         })
         .then(response => {
             if(response.ok) {
